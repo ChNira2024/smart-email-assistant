@@ -1,0 +1,13 @@
+http://localhost:8115/swagger-ui/index.html
+
+http://localhost:8115/v3/api-docs
+
+http://localhost:8115/actuator/info
+
+POST: http://localhost:8115/api/email/generate
+request in body->raw:
+
+{
+  "emailContent": "I am not available for meeting tomorrow",
+  "tone": "professional"
+}

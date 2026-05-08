@@ -1,0 +1,304 @@
+2026-05-08T13:22:38.631+05:30  INFO 5824 --- [email-reply-assistant] [http-nio-8115-exec-5] c.n.a.e.c.EmailGeneratorController       : Received request to generate email. Tone: professional
+2026-05-08T13:22:38.631+05:30  INFO 5824 --- [email-reply-assistant] [http-nio-8115-exec-5] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Prompt: You are an AI assistant that writes professional email replies.
+Generate a clear and concise reply to the following email.
+Do NOT include a subject line.
+Do NOT add any explanation outside the email.
+Use a professional and polite tone.
+
+Original email:
+I am not available for meeting tomorrow
+
+Reply:
+2026-05-08T13:22:43.567+05:30 DEBUG 5824 --- [email-reply-assistant] [http-nio-8115-exec-5] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Full Gemini API Response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Dear [Name],\n\nThank you for the update. Please let me know when you might be available to reschedule, and I will send over a new calendar invitation.\n\nBest regards,\n\n[Your Name]",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 64,
+    "candidatesTokenCount": 42,
+    "totalTokenCount": 578,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 64
+      }
+    ],
+    "thoughtsTokenCount": 472,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-flash-preview",
+  "responseId": "SZb9aYezN4D8juMPjvGssQc"
+}
+
+2026-05-08T13:22:43.567+05:30  INFO 5824 --- [email-reply-assistant] [http-nio-8115-exec-5] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Email parsedResponse: Dear [Name],
+
+Thank you for the update. Please let me know when you might be available to reschedule, and I will send over a new calendar invitation.
+
+Best regards,
+
+[Your Name]
+2026-05-08T13:22:43.567+05:30  INFO 5824 --- [email-reply-assistant] [http-nio-8115-exec-5] c.n.a.e.c.EmailGeneratorController       : Email generated successfully
+2026-05-08T14:11:00.756+05:30  INFO 30864 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Starting EmailReplyAssistantApplication using Java 21.0.10 with PID 30864 (C:\EmbarkX\smart-email-assistant\email-reply-assistant\target\classes started by niran in C:\EmbarkX\smart-email-assistant\email-reply-assistant)
+2026-05-08T14:11:00.757+05:30 DEBUG 30864 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-08T14:11:00.758+05:30  INFO 30864 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-08T14:11:02.227+05:30  INFO 30864 --- [email-reply-assistant] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8115 (http)
+2026-05-08T14:11:02.239+05:30  INFO 30864 --- [email-reply-assistant] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-08T14:11:02.239+05:30  INFO 30864 --- [email-reply-assistant] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-08T14:11:02.293+05:30  INFO 30864 --- [email-reply-assistant] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-08T14:11:02.294+05:30  INFO 30864 --- [email-reply-assistant] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1498 ms
+2026-05-08T14:11:03.306+05:30  INFO 30864 --- [email-reply-assistant] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-05-08T14:11:03.391+05:30  INFO 30864 --- [email-reply-assistant] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8115 (http) with context path '/'
+2026-05-08T14:11:03.403+05:30  INFO 30864 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Started EmailReplyAssistantApplication in 3.051 seconds (process running for 3.319)
+2026-05-08T14:11:03.477+05:30  WARN 30864 --- [email-reply-assistant] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-08T14:11:03.478+05:30  WARN 30864 --- [email-reply-assistant] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-08T14:11:03.478+05:30  INFO 30864 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : EmailReplyAssistantApplication is started..........
+2026-05-08T14:11:11.987+05:30  INFO 30864 --- [email-reply-assistant] [http-nio-8115-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08T14:11:11.988+05:30  INFO 30864 --- [email-reply-assistant] [http-nio-8115-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-08T14:11:11.990+05:30  INFO 30864 --- [email-reply-assistant] [http-nio-8115-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-08T14:11:12.386+05:30  INFO 30864 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.c.EmailGeneratorController       : Received request to generate email. Tone: professional
+2026-05-08T14:11:12.387+05:30  INFO 30864 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Prompt: You are an AI assistant that writes professional email replies.
+Generate a clear and concise reply to the following email.
+Do NOT include a subject line.
+Do NOT add any explanation outside the email.
+Use a professional and polite tone.
+
+Original email:
+Hi, This is Niranjana i have around 3 years of java experience.So which technoloy i will learn so that it will helps out more.
+
+Reply:
+2026-05-08T14:11:17.766+05:30 DEBUG 30864 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Full Gemini API Response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Dear Niranjana,\n\nThank you for reaching out. With three years of Java experience, you have a solid foundation to further specialize your career.\n\nTo maximize your professional growth, I recommend focusing on the following areas:\n\n1.  **Spring Boot and Microservices:** These are industry standards for building scalable enterprise applications.\n2.  **Cloud Platforms:** Gaining certifications in AWS, Azure, or Google Cloud will be highly beneficial.\n3.  **Containerization:** Learning Docker and Kubernetes is essential for modern DevOps environments.\n4.  **Frontend Frameworks:** If you are interested in becoming a full-stack developer, learning React or Angular would be a logical next step.\n\nI hope this helps guide your learning path.\n\nBest regards,\n\n[Your Name]",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 89,
+    "candidatesTokenCount": 159,
+    "totalTokenCount": 665,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 89
+      }
+    ],
+    "thoughtsTokenCount": 417,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-flash-preview",
+  "responseId": "q6H9aZyRKPLg4-EPxP36mAo"
+}
+
+2026-05-08T14:11:17.799+05:30  INFO 30864 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Email parsedResponse: Dear Niranjana,
+
+Thank you for reaching out. With three years of Java experience, you have a solid foundation to further specialize your career.
+
+To maximize your professional growth, I recommend focusing on the following areas:
+
+1.  **Spring Boot and Microservices:** These are industry standards for building scalable enterprise applications.
+2.  **Cloud Platforms:** Gaining certifications in AWS, Azure, or Google Cloud will be highly beneficial.
+3.  **Containerization:** Learning Docker and Kubernetes is essential for modern DevOps environments.
+4.  **Frontend Frameworks:** If you are interested in becoming a full-stack developer, learning React or Angular would be a logical next step.
+
+I hope this helps guide your learning path.
+
+Best regards,
+
+[Your Name]
+2026-05-08T14:11:17.799+05:30  INFO 30864 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.c.EmailGeneratorController       : Email generated successfully
+2026-05-08T16:53:41.559+05:30  INFO 21096 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Starting EmailReplyAssistantApplication using Java 21.0.10 with PID 21096 (C:\EmbarkX\smart-email-assistant\email-reply-assistant\target\classes started by niran in C:\EmbarkX\smart-email-assistant\email-reply-assistant)
+2026-05-08T16:53:41.561+05:30 DEBUG 21096 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-08T16:53:41.562+05:30  INFO 21096 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-08T16:53:43.004+05:30  INFO 21096 --- [email-reply-assistant] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8115 (http)
+2026-05-08T16:53:43.019+05:30  INFO 21096 --- [email-reply-assistant] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-08T16:53:43.020+05:30  INFO 21096 --- [email-reply-assistant] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-08T16:53:43.089+05:30  INFO 21096 --- [email-reply-assistant] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-08T16:53:43.089+05:30  INFO 21096 --- [email-reply-assistant] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1481 ms
+2026-05-08T16:53:44.175+05:30  INFO 21096 --- [email-reply-assistant] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-05-08T16:53:44.263+05:30  INFO 21096 --- [email-reply-assistant] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8115 (http) with context path '/'
+2026-05-08T16:53:44.275+05:30  INFO 21096 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Started EmailReplyAssistantApplication in 3.196 seconds (process running for 3.557)
+2026-05-08T16:53:44.365+05:30  WARN 21096 --- [email-reply-assistant] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-08T16:53:44.366+05:30  WARN 21096 --- [email-reply-assistant] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-08T16:53:44.367+05:30  INFO 21096 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : EmailReplyAssistantApplication is started..........
+2026-05-08T16:55:44.098+05:30  INFO 21096 --- [email-reply-assistant] [http-nio-8115-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08T16:55:44.105+05:30  INFO 21096 --- [email-reply-assistant] [http-nio-8115-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-08T16:55:44.112+05:30  INFO 21096 --- [email-reply-assistant] [http-nio-8115-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-08T17:11:23.897+05:30  INFO 2800 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Starting EmailReplyAssistantApplication using Java 21.0.10 with PID 2800 (C:\EmbarkX\smart-email-assistant\email-reply-assistant\target\classes started by niran in C:\EmbarkX\smart-email-assistant\email-reply-assistant)
+2026-05-08T17:11:23.900+05:30 DEBUG 2800 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-05-08T17:11:23.900+05:30  INFO 2800 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-08T17:11:25.333+05:30  INFO 2800 --- [email-reply-assistant] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8115 (http)
+2026-05-08T17:11:25.347+05:30  INFO 2800 --- [email-reply-assistant] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-08T17:11:25.348+05:30  INFO 2800 --- [email-reply-assistant] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-08T17:11:25.416+05:30  INFO 2800 --- [email-reply-assistant] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-08T17:11:25.417+05:30  INFO 2800 --- [email-reply-assistant] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1475 ms
+2026-05-08T17:11:26.664+05:30  INFO 2800 --- [email-reply-assistant] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2026-05-08T17:11:26.760+05:30  INFO 2800 --- [email-reply-assistant] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8115 (http) with context path '/'
+2026-05-08T17:11:26.773+05:30  INFO 2800 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : Started EmailReplyAssistantApplication in 3.375 seconds (process running for 3.691)
+2026-05-08T17:11:26.846+05:30  WARN 2800 --- [email-reply-assistant] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-08T17:11:26.848+05:30  WARN 2800 --- [email-reply-assistant] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-08T17:11:26.849+05:30  INFO 2800 --- [email-reply-assistant] [main] c.n.a.e.EmailReplyAssistantApplication   : EmailReplyAssistantApplication is started..........
+2026-05-08T17:13:12.827+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08T17:13:12.827+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-08T17:13:12.831+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-08T17:13:13.174+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.c.EmailGeneratorController       : Received request to generate email. Tone: professional
+2026-05-08T17:13:13.174+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Prompt: You are an AI assistant that writes professional email replies.
+Generate a clear and concise reply to the following email.
+Do NOT include a subject line.
+Do NOT add any explanation outside the email.
+Use a professional and polite tone.
+
+Original email:
+Niranjana Charty <niranjana.charty2013@gmail.com>
+4:55 PM (17 minutes ago)
+Add reaction
+Reply
+More
+to Niranjana
+Hi , This is Niranjana. How are you?
+	
+	
+Niranjana Charty (niranjanacharty2013@gmail.com)
+
+
+
+
+Sans Serif
+Generating...
+Send
+
+Reply:
+2026-05-08T17:13:18.038+05:30 DEBUG 2800 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Full Gemini API Response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Dear Niranjana,\n\nThank you for reaching out. I am doing well, thank you for asking. I hope you are doing well as well.\n\nPlease let me know if there is anything specific I can assist you with.\n\nBest regards,\n\n[Your Name]",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 149,
+    "candidatesTokenCount": 55,
+    "totalTokenCount": 692,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 149
+      }
+    ],
+    "thoughtsTokenCount": 488,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-flash-preview",
+  "responseId": "VMz9aaSAHKiX4-EPjorS2Qg"
+}
+
+2026-05-08T17:13:18.054+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Email parsedResponse: Dear Niranjana,
+
+Thank you for reaching out. I am doing well, thank you for asking. I hope you are doing well as well.
+
+Please let me know if there is anything specific I can assist you with.
+
+Best regards,
+
+[Your Name]
+2026-05-08T17:13:18.054+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-2] c.n.a.e.c.EmailGeneratorController       : Email generated successfully
+2026-05-08T17:18:41.645+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-3] c.n.a.e.c.EmailGeneratorController       : Received request to generate email. Tone: professional
+2026-05-08T17:18:41.645+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-3] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Prompt: You are an AI assistant that writes professional email replies.
+Generate a clear and concise reply to the following email.
+Do NOT include a subject line.
+Do NOT add any explanation outside the email.
+Use a professional and polite tone.
+
+Original email:
+Niranjana Charty <niranjana.charty2013@gmail.com>
+5:18 PM (0 minutes ago)
+Add reaction
+Reply
+More
+to Niranjana
+Hi , This is Niranjana. How are you?
+	
+	
+Niranjana Charty (niranjanacharty2013@gmail.com)
+
+
+
+
+Sans Serif
+Generating...
+Send
+
+Reply:
+2026-05-08T17:18:44.334+05:30 DEBUG 2800 --- [email-reply-assistant] [http-nio-8115-exec-3] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Full Gemini API Response: {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Dear Niranjana,\n\nThank you for reaching out. I am doing well, and I hope you are also doing well.\n\nPlease let me know if there is anything specific you would like to discuss or if there is any way I can assist you.\n\nBest regards,\n\n[Your Name]",
+            "thoughtSignature": "EvcLCvQLAQw51seOUvlAmVBeOKAk8lY0SYYtPTCkIlnse5uyGVES05AaWqxUze130lUdtrZQvfalwCFDSZ7L5A6ybbbbPQvYMsc7fqvLCJMbObJAjs+BzK7B7SkWwb0znm4BnpVydIATRyIbxtfDD61Or3xY5QxcHzK1oSPvTLSjXPX6cMDJ/Ea8vlpuAPgpwadA8wCFKmPCEWI+d38AdIC9+QOHiljXs/F+0gQGk7sJA+Wg/tQ2Z8cOMXBLcke0hbEVCgq11B2G81/S33qiFNr8j5Q/yNR5fSDn0Izemf41PEg9uEPvkUpsc3mCvG6I2cOGEHzGSKFjEoxt1xELmwTOxmkbfyaT8uLiMCN7UjncIL3kxnTrKX/uKrW2nI/zkjSN8fjb9+mCuG1Sa8jbHrq9ieQ+9HWiB8bJHQ3MWW3/iaoxGsXSdIaRXfI6FxGvciLm2wv2tc4pWPYXguHNuZzSh4Wr+W9+zMSgbjxd+OXPPuOfeWM+LblJr0pGZXcMT735z/Dbqht4Rw3bMwb1DctVa1imH9ahjpDMzexvPR0V27GE1BkiL3VvhZPWUKMl7YYGvmk+zuDXmhiiS4N+U9x2sacDm4/lffIi24gGmPixXNuTJd8hgdL7YFsLazQztpcM6D2tYj3XO51gpieTTsTOI/FEEYzAkZAp1qgE2OSFwlcpNSTFAD1LujXs2sJ/2MmzKhK2giyVNmlliF+gZ3iuC9/cc9ecStFXgz8q7qSlvHbN1z+ZJKY6FyamFneaYPgjSsTKGAe1JITic5KGURsHahl96ME+nK41G33p/lAIkyBpVwTXZ4BT6FX7t+ARGUalnq+ScP9eWNTtOsapuha7Qwd+IvFg9HMyvUctUBGy75UxdwWivzI0tj9Khh2YK3sue1ToZz0HD9QKR6lEDA5CaFnXD5OQvQfH+CYwWZXUp9E9lqdLW3uHB6E6iua+iC88+RomCmSGVXhBGxDOP2Ftf8KYUqUZHOEplstfwr1CXcWwPv4WNoobwCHE0D+/WUWda0wiU2iFKghu5y0nsD2m71kJznMUH+Z9oCbXvreTfe6xoWoNvxraLN5UqdTki2kBLYx917BRgiVwm/Rqgt6mnvHh5fhYd7/rgwwf1ASiU60KRLXW7567Jr6TExU0AYH0UfockMx2n6QIdEU86yHrkwwv5PMnHFalJvl5/Nfn+AqNI6xlj0kDRCtpYe04ZKKcvCo8NXSESbc7nR/7pqvRb1pXT9mJ6tEJpo+rv/pXSLR4CKWZeDGxFuf6ptuJ9hsKi3vHMAczZVwhV2j2xdgTgtglMhcqnPClX2CuGsQRQ3ZzuM8HuRpMQgUDJBH6VwUX1Nvx2RS+M5ODdCy1F4TqRdeS99bz6kQDDs0Helo7miDp5XZN7GMJ5rI65C0tMmdAX08yYmjDRdRJ+VuSfDLMdg6x5X4fshKiQW3Fe6TZVy46H9IH+rdQmQ0hX47cN2fmGFWuvOhm+PtROZYPGVrbWT741e1BpiZyvkwnZzanxtpJREdKSLZ7ni02MjH/zbC+ENV4MlgGUri/G+D5twavlbSjf5+eRR5tOEMu5ghAUA/oiF2fhZDXOsHebpYveyWkJYyeIrFCBbZjdRZG7I7DvQ5DYl9mWIub4jQV1JKi4tqCr38veHa9HkKGykoY/Uwk3pjujFIdokerrlg4rmTNtpVYu2X6azZwMBjtK/3mj//yoQq0OaVBthdE1Kdk5DvlxTJdCdoVCO26O02f3xJVcV5lY7YCG7aMVB+3KfS16FKH717yTaIzk3GuEXGXKWfq1wiixIkYIe7X+I1jCEplYbrNDjxiIEdwE5dEoVXV078AVZNSoRFNoQP1U5wUKdP881XipLrP+abGayuS+hewpHQV6LIdnUNWtRl4GpBVTFO25kLrqVHR3jlBDu8eYj6q3xpQcaYNOzoAkjfy3RgzZIKJS4OTGHM8kfLTECLrBTqQ74iyzLmflaUrUwqSC7AvWNW7Wr1np9qSaAJy6TxR+vpamPVao9Gyn7/HiQERANOZ2sXdB7TO"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 148,
+    "candidatesTokenCount": 60,
+    "totalTokenCount": 608,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 148
+      }
+    ],
+    "thoughtsTokenCount": 400,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3-flash-preview",
+  "responseId": "m839aYO8Ic3RjuMPh5eEmQk"
+}
+
+2026-05-08T17:18:44.334+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-3] c.n.a.e.s.i.EmailGeneratorServiceImpl    : Generated Email parsedResponse: Dear Niranjana,
+
+Thank you for reaching out. I am doing well, and I hope you are also doing well.
+
+Please let me know if there is anything specific you would like to discuss or if there is any way I can assist you.
+
+Best regards,
+
+[Your Name]
+2026-05-08T17:18:44.334+05:30  INFO 2800 --- [email-reply-assistant] [http-nio-8115-exec-3] c.n.a.e.c.EmailGeneratorController       : Email generated successfully
