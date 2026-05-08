@@ -11,7 +11,9 @@ AI-powered email reply generation system that integrates with Gmail using a Chro
 
 #### 📖 Description
 Developed an AI-powered email reply generation service using **Spring Boot** and **Gemini API**.  
-The application accepts email content and tone as input and generates professional email responses using generative AI.
+The application accepts email content and tone as input and generates professional email responses 
+using generative AI. Implemented REST APIs, prompt engineering, response parsing, and robust exception handling. 
+Integrated WebClient for external API communication and ensured secure API key management using environment variables.
 
 #### ⚙️ Key Features
 - REST API for email generation  
@@ -27,7 +29,8 @@ The application accepts email content and tone as input and generates profession
 
 #### 📖 Description
 Built a Chrome extension that integrates directly with **Gmail UI** to generate AI-based email replies.  
-The extension injects a custom **"AI Reply"** button into the compose window, captures email content, and communicates with the backend service.
+The extension injects a custom **"AI Reply"** button into the compose window, captures email content, and communicates with a Spring Boot backend service. The backend processes the request using Gemini API and returns a generated response, 
+which is automatically inserted into the Gmail compose box.
 
 #### ⚙️ Key Features
 - Gmail UI integration using content scripts  
